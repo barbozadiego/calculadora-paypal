@@ -1,0 +1,220 @@
+
+/*---------------------------------------------------|  Fonts Icons  |---------------------------------------------------*/
+
+.fas.fa-arrow-alt-circle-up, .fas.fa-arrow-alt-circle-down, .fas.fa-calculator, .fas.fa-search-dollar { 
+    margin-right: .2em;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+
+.box-main {
+    width: 100%;
+    font-size: 15px;
+    color: #495464;
+    font-family: arial;
+}
+
+header {
+    background-color: #003087;
+}
+
+.box-logo {
+    width: 100%;
+    padding: 5% 20%;
+}
+
+.logo {
+    width: 100%;
+    display: block; /*Elimina el tipico espacio inferior de las imagenes*/
+}
+
+.page-title {
+    font-size: 1.8em;
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.box-calculator {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.box-calculator input:focus {
+    outline: .1em solid #003087;
+    box-shadow: 0 0 .2em #003087;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+
+
+/*---------------------------------------------------|  Fee  |---------------------------------------------------*/
+
+.box-fee {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.header-fee {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.form-fee {
+    width: 100%;
+    border: .15em solid #003087;
+    border-radius: .7em;
+    padding: 2em;
+}
+
+.box-input-fee {
+    display: flex;
+    justify-content: center;
+}
+
+.form-fee input {
+    width: 100%;
+    max-width: 5em;
+    padding: .5em;
+    font-size: 1em;
+}
+
+.text-fee {
+    padding: .5em;
+}
+
+
+
+/*---------------------------------------------------|  Form Send & Receiver  |---------------------------------------------------*/
+
+.alert-message {
+    font-size: .9em;
+    color: #003087;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+.header-receive, .header-send {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.box-receive-send {
+    width: 100%;
+    display: flex;
+    flex-direction: row nowrap;
+    margin-bottom: 1em;
+}
+
+.box-receive-send input {
+    width: 100%;
+    padding: .5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.form-receive {
+    margin: 5% 2.5% 5% 0;
+}
+
+.form-send {
+    margin: 5% 0 5% 2.5%;
+}
+
+.form-receive, .form-send {
+    padding: 1em;
+    border: .15em solid #003087;
+    border-radius: .7em;
+}
+
+.box-receive, .box-send {
+    width: 50%;
+}
+
+.box-receive label, .box-send label {
+    display: flex;
+    justify-content: center;
+}
+
+.box-input-receive, .box-input-send {
+    max-width: 40%;
+    display: inline-block;
+}
+
+.description-label {
+    width: auto;
+    min-width: 7.5em;
+    display: inline-block;
+    text-align: right;
+    margin-right: .5em;
+    padding: .5em;
+}
+
+
+/*--------------------------------------------------|  Instructions  |---------------------------------------------------*/
+
+.instructions {
+    margin-bottom: 4em;
+}
+
+.header-instructions {
+    background-color: #003087;
+    color: #fff;
+}
+
+.instructions h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding: 1.3em;
+    font-size: 1.3em;
+}
+
+.sub-header-instructions {
+    background-color: #f4f4f4;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+}
+
+.instructions h3 {
+    padding: 1em;
+}
+
+.instructions p {
+    margin-bottom: 1em;
+    line-height: 1.3em;
+}
+
+
+
+/*---------------------------------------------------|  Footer  |---------------------------------------------------*/
+
+footer {
+    width: 100%;
+    padding: 5%;
+    background-color: #003087;
+}
+
+.credits {
+    text-align: center;
+    color: #fff;
+}
+
+.credits strong {
+    color: #fff;
+}
+
+.credits strong:hover {
+    color: #FFBF00;
+}

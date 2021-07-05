@@ -1,0 +1,80 @@
+/*--------------------------------/ Screen up to 1024px width  /--------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+ .box-main {
+   font-size: 10px;
+ }
+ 
+
+
+
+}
+
+/*--------------------------------/ Screen up to 767px width  /--------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+ .box-main {
+    font-size: 14px;
+ }  
+    
+ .box-receive-send {
+    flex-flow: column;
+ }
+ 
+ .box-fee {
+    margin-bottom: 1.5em;
+ }
+
+.form-receive, .form-send {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+
+
+
+.box-receive, .box-send {
+   width: 100%;
+}
+
+
+.box-calculator {
+   width: 70%;
+}
+
+
+}
+
+/*--------------------------------/ Screen up to 480px width  /--------------------------------*/
+
+
+@media screen and (max-width: 480px) {
+  
+ .box-main {
+   font-size: 11px;
+ } 
+ 
+ .box-calculator {
+   width: 70%;
+}
+
+    
+}
+
+/*--------------------------------/ Screen up to 320px width  /--------------------------------*/
+
+@media screen and (max-width: 320px) {
+    
+ .box-main {
+   font-size: 8px;
+ } 
+ 
+ .box-calculator {
+    width: 70%;
+ }
+
+
+
+}

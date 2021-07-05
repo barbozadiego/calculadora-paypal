@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <title>Calculadora Paypal 2020</title>
+
+    <meta property="og:title" content="Calculadora PayPal"/>
+    <!-- <meta property="og:url" content="https://tusaldopokerstars.com"/> -->
+	<meta property="og:image" content="https://tusaldopokerstars.com/img/miniatura.jpg"/>
+	<meta property="og:image:secure_url" content="https://tusaldopokerstars.com/img/miniatura.jpg"/>
+	<meta property="og:image:width" content="300px" />
+	<meta property="og:image:height" content="300px" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="by @barbozadiego_"/>
+
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v15">
+    <link rel="stylesheet" href="css/responsive.css?v15">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="box-main">
+
+<!------------------------------------| Box Header |------------------------------------>
+     
+        <header>
+            <div class="box-logo"><img class="logo" src="img/logo.svg" alt="Logo Calculadora Paypal"></div>
+        </header>
+        
+<!------------------------------------| Box Calculator |------------------------------------>
+
+        <article class="box-calculator">
+                
+                <h1 class="page-title">Calculadora de Comisiones PayPal</h1>
+                
+<!------------------------------------| Box Fee |------------------------------------>
+
+            <section class="box-fee">
+                   <form class="form-fee" id="formFee">
+                        <h2 class="header-fee">Comisiones Paypal</h2>
+                        <div class="box-input-fee">  
+                                <input type="text" id="percentage" value=5,4>  
+                                <p class="text-fee">% más $</p>
+                                <input type="text" id="cents" value=0,30>
+                         </div> 
+                   </form>
+            </section>
+
+<!------------------------------------| Box Receive-Send |------------------------------------> 
+
+            <div class="box-receive-send">
+
+<!------------------------------------| Box Receive |------------------------------------> 
+
+            <section class="box-receive">
+                    <form class="form-receive" id="formReceive">
+                        <h2 class="header-receive">Calculadora para Recibir</h2>
+                        <div>
+                        <label>  
+                                <div class="description-label">Para Recibir $:</div>
+                                <div class="box-input-receive"><input type="text" id="receiveQuantity" autocomplete="off" onkeypress="return dataValid(event)"></div>
+                        </label>
+                        <label> 
+                                <div class="description-label">Enviar $:</div>
+                                <div class="box-input-receive"><input type="text" id="sendQuantity" disabled></div>
+                        </label>
+                        <label>
+                                <div class="description-label">Comisión $:</div>
+                                <div class="box-input-receive"><input type="text" id="fee" disabled></div>
+                        </label>
+                        </div>
+                    </form>
+            </section>
+                
+<!------------------------------------| Box Send |------------------------------------>
+
+            <section class="box-send">
+                    <form class="form-send" id="formSend">
+                        <h2 class="header-send">Calculadora para Enviar</h2>
+                        <label>  
+                                <div class="description-label"> Si Envias $:</div>
+                                <div class="box-input-send"><input type="text" id="sendQuantity" autocomplete="off" onkeypress="return dataValid(event)"></div> </label>
+                        <label>  
+                                <div class="description-label">Comisión $:</div>
+                                <div class="box-input-send"><input type="text" id="fee" disabled></div>
+                        </label>
+                        <label>
+                                <div class="description-label">Recibes $:</div>
+                                <div class="box-input-send"><input type="text" id="receiveQuantity" disabled></div>
+                        </label>
+                    </form>
+            </section>
+
+            </div>
+
+<!------------------------------------| Box Instructions |------------------------------------>
+
+            <section class="instructions">
+
+                <div class="header-instructions"> <h2><i class="fas fa-calculator"></i> ¿Cómo usar la calculadora Paypal?</h2> </div>
+
+                        <p>Esta calculadora es una herramienta que te permitira saber el monto <strong>BRUTO</strong> que debes enviar o que deberan enviarte para recibir un monto <strong>NETO</strong>. El formulario solo podra rellenarse con números. Si quieres agregar un decimal deberas hacerlo colocando una coma por ejemplo (3,17).</p>
+
+                        <p>Por defecto los valores estan configurados de manera estándar con las comisiones que PayPal nos descuenta, las cuales son <strong>5,4%</strong> más un valor constante de <strong>0,30 USDs</strong> por transacción. <strong>Nota:</strong> Si tu país cuenta con una comisión diferente, puedes ingresarla de forma manual en el área de "Comisiones Paypal".</p>
+
+                <div class="sub-header-instructions"> <h3><i class="fas fa-arrow-alt-circle-down"></i> Calculadora para Recibir</h3> </div>
+
+                        <p>Solo debes completar el campo que dice <strong>"Para Recibir"</strong> e inmediatamente obtendras en los campos inferiores el monto que el cliente debe enviar y la comision que este pagara para recibir dicho monto.</p>
+
+                <div class="sub-header-instructions"> <h3> <i class="fas fa-arrow-alt-circle-up"></i> Calculadora para Enviar</h3> </div>
+
+                        <p>Es el mismo procedimiento que para recibir, la diferencia es que acá completaras el campo que dice <strong>"Si Envias"</strong> e inmediatamente obtendras en los campos inferiores el monto que debes enviar y la comisión que pagas por dicho monto.</p>
+
+                        <p>Como ejemplo colocamos USDs (Dólares), pero la calculadora de comisiones funciona de igual manera para cualquier moneda, como Euros, Yenes, Libras Esterlinas, Francos, etc.</p>
+
+                <div class="sub-header-instructions"> <h3> <i class="fas fa-search-dollar"></i> ¿Qué es el monto Bruto y Neto?</h3> </div>
+
+                        <p>El monto <strong>BRUTO</strong> es el dinero enviado o recibido sin contar ningún tipo de comisión. En resumen, es lo que el pagador envía desde su cuenta sin aplicar descuentos.</p>
+
+                        <p>Por ejemplo: Si te envían 50 USDs brutos, te llegarán 47 USDs netos, descontando la comisión que Paypal cobra por transacción.</p>
+
+                        <p>El monto <strong>NETO</strong> es el dinero enviado descontado todo tipo de comisiones.</p>
+
+                        <p>Por ejemplo: Si te envían 50 USDs netos, realmente el que paga debe enviar 53,17 USDs brutos, a los 50 USDs netos debes sumarle
+                        la comisión de paypal que en este caso serian 3,17 USDs.</p>
+
+            </section>
+
+        </article> 
+
+<!------------------------------------| Box Footer |------------------------------------>  
+
+        <footer>
+                <p class="credits">website developed by <a href="http://www.instagram.com/barbozadiego_" target="_blank"><strong>@barbozadiego_</strong></a></p>
+        </footer>
+
+ </div>    
+    <script src="scripts/index.js?v5"></script>
+</body>
+</html>
