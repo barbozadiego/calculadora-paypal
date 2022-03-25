@@ -1,3 +1,9 @@
-# Calculadora de comisiones paypal
+# 🔢 Paypal commission calculator
 
-Esta calculadora es una herramienta que te permitira saber el monto BRUTO que debes enviar o que deberan enviarte para recibir un monto NETO. 
+## Overview
+
+Tool that allows you to know the GROSS amount that you must send or that must be sent to you, to receive a NET amount.
+
+## App Interface
+
+![app-interface](https://user-images.githubusercontent.com/73412079/160029454-42ea5e87-63c2-41d5-a788-e97ff6aba087.jpg)
